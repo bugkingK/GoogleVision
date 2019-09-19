@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GoogleVision"
-  s.version      = "0.0.2"
+  s.version      = "1.0.0"
   s.summary      = "Cloud Vision API allows developers to easily integrate vision detection features within applications"
   s.description  = <<-DESC
 Cloud Vision API allows developers to easily integrate vision detection features within applications, including image labeling, face and landmark detection, optical character recognition (OCR), and tagging of explicit content.
