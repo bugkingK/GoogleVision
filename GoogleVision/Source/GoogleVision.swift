@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class GoogleVision {
+public class GoogleVision {
     
     public struct Vision {
         public let fullTextAnnotation: String
@@ -46,7 +46,7 @@ class GoogleVision {
     /// Default URL session.
     private let session = URLSession(configuration: .default)
     
-    init(apiKey:String) {
+    public init(apiKey:String) {
         assert(apiKey != "", "Please enter api key")
         self.apiKey = apiKey
     }
