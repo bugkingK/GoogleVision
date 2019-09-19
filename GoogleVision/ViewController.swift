@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let gv = GoogleVision.init(apiKey: "")
+        let img = UIImage(named: "Image")
+        gv.run(image:img) { (text, err) in
+            guard let text = text, err == nil else {
+                print(err?.localizedDescription)
+                return
+            }
+            
+            print(text)
+        }
     }
 
 

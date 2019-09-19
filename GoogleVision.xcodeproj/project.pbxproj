@@ -3,27 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D23BB530233346A500329BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB52F233346A500329BC1 /* AppDelegate.swift */; };
-		D23BB532233346A500329BC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB531233346A500329BC1 /* SceneDelegate.swift */; };
 		D23BB534233346A500329BC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB533233346A500329BC1 /* ViewController.swift */; };
 		D23BB537233346A500329BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23BB535233346A500329BC1 /* Main.storyboard */; };
 		D23BB539233346A600329BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23BB538233346A600329BC1 /* Assets.xcassets */; };
 		D23BB53C233346A600329BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23BB53A233346A600329BC1 /* LaunchScreen.storyboard */; };
+		D23BB5452333472C00329BC1 /* GoogleVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23BB5442333472C00329BC1 /* GoogleVision.swift */; };
+		D23BB5482333475C00329BC1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D23BB5472333475C00329BC1 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D23BB52C233346A500329BC1 /* GoogleVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23BB52F233346A500329BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D23BB531233346A500329BC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D23BB533233346A500329BC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D23BB536233346A500329BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D23BB538233346A600329BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23BB53B233346A600329BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23BB53D233346A600329BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23BB5442333472C00329BC1 /* GoogleVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVision.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23BB5482333475C00329BC1 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +58,8 @@
 		D23BB52E233346A500329BC1 /* GoogleVision */ = {
 			isa = PBXGroup;
 			children = (
+				D23BB5432333471E00329BC1 /* Source */,
 				D23BB52F233346A500329BC1 /* AppDelegate.swift */,
-				D23BB531233346A500329BC1 /* SceneDelegate.swift */,
 				D23BB533233346A500329BC1 /* ViewController.swift */,
 				D23BB535233346A500329BC1 /* Main.storyboard */,
 				D23BB538233346A600329BC1 /* Assets.xcassets */,
@@ -65,6 +67,14 @@
 				D23BB53D233346A600329BC1 /* Info.plist */,
 			);
 			path = GoogleVision;
+			sourceTree = "<group>";
+		};
+		D23BB5432333471E00329BC1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D23BB5442333472C00329BC1 /* GoogleVision.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = GoogleVision;
+			packageProductDependencies = (
+				D23BB5472333475C00329BC1 /* SwiftyJSON */,
+			);
 			productName = GoogleVision;
 			productReference = D23BB52C233346A500329BC1 /* GoogleVision.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = D23BB523233346A500329BC1;
+			packageReferences = (
+				D23BB5462333475C00329BC1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = D23BB52D233346A500329BC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +156,7 @@
 			files = (
 				D23BB534233346A500329BC1 /* ViewController.swift in Sources */,
 				D23BB530233346A500329BC1 /* AppDelegate.swift in Sources */,
-				D23BB532233346A500329BC1 /* SceneDelegate.swift in Sources */,
+				D23BB5452333472C00329BC1 /* GoogleVision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QG49X22JS;
 				INFOPLIST_FILE = GoogleVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QG49X22JS;
 				INFOPLIST_FILE = GoogleVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D23BB5462333475C00329BC1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D23BB5472333475C00329BC1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D23BB5462333475C00329BC1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D23BB524233346A500329BC1 /* Project object */;
 }
